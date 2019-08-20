@@ -1,12 +1,37 @@
-
 1) Explain REST and RESTful
+
+REST (Representational State Transfer) is an API (Application Programming Interface) that must be stateless. Communication between the client and the server must not depend on the server. Thus, each request must contain all the information necessary for its processing.
+This makes it possible to process requests from multiple clients interchangeably via multiple server instances.
+
+
 
 2) Explain the architectural style for the creation of a web API (client server communication, formatting language, etc.)
 
+The responsibilities are separated between the client and the server.
+The client-server communication is carried out without preserving the state of the communication session on the server between two successive requests. The state of the session is kept by the client and transmitted to each new request. The client's requests contain all the necessary information for the server to answer.
+
+
 3) Explain HTTP requests types when used with RESTful web (GET, PUT, POST, etc.)
 
-4) Explain the difference between stateless and stateful protocol. Which type of protocol is HTTP ?
+Get: This method exists to retrieve data from a resource.
 
-5) Explain the difference between a GET and a POST (like how are sent the parameters)
+Post: to send data in a request and often to add it to the resource specified in the URI part of the first line of the request. The content type in the body of the request can be set with a Content-type header so that the server knows how to process the data in the request.
 
-6) You can’t work out how to solve a coding problem. What do you do to find the answer?
+PUT: PUT indicates that only the URI specified by the client must be assigned.
+
+Delete :  the given resource in the URI.
+
+4) Explain the difference between stateless and stateful protocol. Which type of protocol is HTTP?
+stateless is not the stateful stateful is the opposite.
+stateless does not require the server to keep the information. HTTP is a stateless protocol, which means that the connection between the browser and the server is lost when the transaction ends.
+
+
+5) Explain the difference between a GET and a POST
+
+GET: does not have a body, because it only looks for external information.
+Post: The content type in the body of the request can be set with a Content-type header so that the server knows how to process the data in the request.
+
+6) You can not work out how to solve a coding problem. What do you do to find the answer?
+
+- surf the net in first place
+- ask an expert / colleague
